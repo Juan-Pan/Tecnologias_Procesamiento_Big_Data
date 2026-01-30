@@ -1,0 +1,11 @@
+# Datos
+*.csv
+*.xlsx
+data/
+
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
+.DS_Store
