@@ -25,12 +25,12 @@ def init_glue():
         sys.exit(1)
 
 def create_database(glue):
-    print(f"1. verificando base de datos '{database_name}'")
+    print(f"1. revisando base de datos '{database_name}'")
     try:
         glue.create_database(
             DatabaseInput={
                 'Name': database_name,
-                'Description': 'base de datos para historico avax grupo imat3b09'
+                'Description': 'base de datos para sprint2 avalanche grupo imat3b09'
             }
         )
         print("   - base de datos creada.")
@@ -85,7 +85,6 @@ def main():
     create_database(glue)
     create_crawler(glue)
     start_crawler(glue)
-    print("\nCORRECCIÓN FINALIZADA: Ahora usas trade_data_imat3b09")
 
 if __name__ == "__main__":
     main()
