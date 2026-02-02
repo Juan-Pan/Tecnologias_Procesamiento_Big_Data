@@ -76,7 +76,7 @@ def start_crawler(glue):
     print(f"3. iniciando ejecucion del crawler...")
     try:
         glue.start_crawler(Name=crawler_name)
-        print("   - crawler arrancado. actualizando catalogo.")
+        print("   - crawler arrancado.")
     except Exception as e:
         print(f"   - error al iniciar: {e}")
 
