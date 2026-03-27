@@ -69,7 +69,7 @@ def main():
     # ya esta creada la base de datos, asi que no la creamos de nuevo
     create_gold_crawler(glue)
     start_crawler(glue)
-    print("\nProceso finalizado. Espera unos 2 minutos a que termine de escanear.")
+    print("\nProceso finalizado. Espere unos 2 minutos a que termine de escanear.")
 
 if __name__ == "__main__":
     main()
